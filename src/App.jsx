@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function App() {
   const [messages, setMessages] = useState([
@@ -78,6 +79,7 @@ export default function App() {
       <button onClick={sendMessage} style={{ padding: 8, marginLeft: 10 }}>
         Send
       </button>
+      <Analytics />
     </div>
   );
 }
